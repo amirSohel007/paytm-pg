@@ -46,7 +46,7 @@ server.on('request', (req, res) => {
                     "mid": PaytmConfig.PaytmConfig.mid,
                     "websiteName": PaytmConfig.PaytmConfig.website,
                     "orderId": orderId,
-                    "callbackUrl": "http://localhost:8000/callback",
+                    "callbackUrl": "https://paytm-pg.herokuapp.com/callback",
                     "txnAmount": {
                         "value": data.amount,
                         "currency": "INR",
