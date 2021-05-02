@@ -4,6 +4,8 @@ const path = require('path')
 const fs = require('fs')
 const qs = require('querystring')
 
+const PORT = process.env.PORT || 8000
+
 // Import paytm checksum utility
 const PaytmChecksum = require('./config/checksum')
 const PaytmConfig = require('./config/config')
@@ -197,6 +199,4 @@ server.on('request', (req, res) => {
     }
 })
 
-server.listen(process.env.PORT || 3000, 'localhost', () => {
-    console.log("Server listening on port: 3000")
-})
+server.listen(PORT, () => console.log("Server listining"))
