@@ -1,6 +1,6 @@
 const PaytmConfig = {
-    mid: "KrlQAc88495620252325",
-    key: "%Py_P5q5ZqNN0jE7",
+    mid: process.env.MARCHANT_ID,
+    key: process.env.MARCHANT_KEY,
     website: "WEBSTAGING"
   }
   
