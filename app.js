@@ -3,7 +3,7 @@ const https = require('https')
 const path = require('path')
 const fs = require('fs')
 const qs = require('querystring')
-require('dotenv').config()
+
 const PORT = process.env.PORT || 8000
 
 // Import paytm checksum utility
