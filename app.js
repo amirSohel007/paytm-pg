@@ -46,7 +46,7 @@ server.on('request', (req, res) => {
                     "mid": PaytmConfig.PaytmConfig.mid,
                     "websiteName": PaytmConfig.PaytmConfig.website,
                     "orderId": orderId,
-                    "callbackUrl": "http://localhost:3000/callback",
+                    "callbackUrl": "/callback",
                     "txnAmount": {
                         "value": data.amount,
                         "currency": "INR",
